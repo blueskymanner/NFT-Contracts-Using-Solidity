@@ -10,8 +10,10 @@ import "hardhat/console.sol";
 // We need to import the helper functions from the contract that we copy/pasted.
 import { Base64 } from "./libraries/Base64.sol";
 
+
 // We inherit the contract we imported. This means we'll have access
 // to the inherited contract's methods.
+
 contract MyEpicNFT is ERC721URIStorage {
     // Magic given to us by OpenZeppelin to help us keep track of tokenIds.
     using Counters for Counters.Counter;
